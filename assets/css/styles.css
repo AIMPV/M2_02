@@ -1,0 +1,68 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: #e7e7e7;
+  height: 100%;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  grid-area: nav;
+  height: 60px;
+  background: #15527f;
+}
+aside {
+  grid-area: aside;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+main {
+  grid-area: main;
+}
+.card .btn {
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  outline: none;
+  background: #15527f;
+  border: medium none;
+}
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.card-img img {
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+}
+footer {
+  grid-area: footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-areas:
+      "nav nav"
+      "aside main"
+      "footer footer";
+  height: 100%;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+}
